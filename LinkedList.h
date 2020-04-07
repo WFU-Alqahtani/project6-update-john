@@ -23,6 +23,7 @@ public:
     ~LinkedList();
 
     //Functions. You may not need to use them all
+    void importList();
     void append(YourClass obj);
     bool Delete (YourClass obj);
     YourClass find (YourClass obj)

@@ -1,16 +1,21 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
+#include <fstream>
 #include "BinaryInsertionSort.h"
 #include "Node.h"
 using namespace std;
 
 int main() {
 
-    string filename;
+    ifstream inFile;
+    string filename = "vgsales.csv";
+    inFile.open(filename);
    //read the file name of your dataset
 
     vector<YourClass> v;
+    Node* head = new Node();
+    Node* current = head;
 
     // populate the vector with the data from your data set
 
