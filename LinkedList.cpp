@@ -1,23 +1,26 @@
 //
 // Created by sarra on 3/30/2020.
 //
+
 #include "LinkedList.h"
 #include <iostream>
-using namespace std
+using namespace std;
+
 
 LinkedList::LinkedList(){
-    value = v;
-    next = nullptr;
+    head = nullptr;
 }
 
 
-void LinkedList::importList()
-{
-    Node* head = new Node()
+void LinkedList::insertAfter(Node* nextNode){
+    Node* tmp = this->next;
+    this->next = nextNode;
+    nextNode->next=tmp;
+}
+
+
+void LinkedList::printList(){
+    Node* head = new Node();
     Node* current = head;
-    ifstream inFile;
-    string filename = "vgsales.csv";
-    inFile.open(filename);
-
-
+    while(current->getNext != nullptr){cout << current << endl;}
 }

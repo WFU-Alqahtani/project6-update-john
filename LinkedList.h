@@ -32,7 +32,6 @@ public:
 
 private:
     Node* head;
-
 };
 
 #endif //BINARYINSERTIONSORT_LINKEDLIST_H
