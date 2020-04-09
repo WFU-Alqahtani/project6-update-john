@@ -2,6 +2,7 @@
 #define BINARYINSERTIONSORT_H
 #include "vgSales.h"
 
+
 #include <vector>
 using namespace std;
 

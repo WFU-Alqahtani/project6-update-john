@@ -24,9 +24,9 @@ public:
 
     //Functions. You may not need to use them all
     void importList();
-    void append(YourClass obj);
-    bool Delete (YourClass obj);
-    YourClass find (YourClass obj)
+    void append(vgSales obj);
+    bool Delete (vgSales obj);
+    vgSales find (vgSales obj)
     void printList();
     void InsertionSort();
 

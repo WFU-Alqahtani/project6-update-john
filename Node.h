@@ -1,11 +1,13 @@
+
 #ifndef NODE_H
 #define NODE_H
 #include "LinkedList.h"
+#include "vgSales.h"
 
 class Node {
 public:
     // Node constructor
-    Node(vgsales v , Node* n = nullptr)
+    Node( vgSales v , Node* n = nullptr)
     {
         value = v;
         next = n;
@@ -18,7 +20,7 @@ public:
     friend class LinkedList;
 private:
 
-    vgsales value;
+    vgSales value;
     Node* next;
 
 };

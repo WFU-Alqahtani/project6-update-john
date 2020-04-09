@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-
+/*
 LinkedList::LinkedList(){
     head = nullptr;
 }
@@ -24,3 +24,5 @@ void LinkedList::printList(){
     Node* current = head;
     while(current->getNext != nullptr){cout << current << endl;}
 }
+
+ */

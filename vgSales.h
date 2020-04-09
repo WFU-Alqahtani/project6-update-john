@@ -5,8 +5,8 @@
 #ifndef BINARYINSERTIONSORT_VGSALES_H
 #define BINARYINSERTIONSORT_VGSALES_H
 #include "Node.h"
-
-
+//#include <string>
+using namespace std;
 
 class vgSales
 {
@@ -18,9 +18,11 @@ public:
         game = g;
     }
 
-};
+    friend ostream &operator<<( ostream &output, const vgSales &D ) {
+        output << D.game;
+        return output;
+    }
 
-//overloader to print out the vector
-bool operator<<(const vgSales& cout, const vgSales& v){}
+};
 
 #endif //BINARYINSERTIONSORT_VGSALES_H

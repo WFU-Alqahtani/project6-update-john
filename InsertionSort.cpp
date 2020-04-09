@@ -11,8 +11,7 @@ int main() {
 
     //read the file name of your dataset
     ifstream inFile;
-    string filename = "vgsales.csv";
-    inFile.open(filename);
+    inFile.open("vgsales.csv");
 
 
     // populate the vector with the data from your data set
@@ -27,6 +26,7 @@ int main() {
        i++;
    }
 
+   inFile.close();
    // unit test
    for (int i = 0; i < v.size(); i++)
    {
@@ -43,7 +43,7 @@ int main() {
 
     // print out sorted list
     for (int i = 0; i < v.size(); i++) {
-        //you should ovrride << to YourClass
+        //you should override << to YourClass
         cout << v[i] << endl;
     }
 
